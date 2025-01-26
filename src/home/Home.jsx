@@ -1,9 +1,10 @@
 import "./home.css"
+import bannerHome from '../assets/bannerHome.png'
 
 const Home = () => {
     return (
     <section>
-        <h2 className="mi-clase">Home images</h2>
+        <div><img src={bannerHome} alt="" /></div>
     </section>
       );
 };
