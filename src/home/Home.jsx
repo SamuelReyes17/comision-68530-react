@@ -1,12 +1,16 @@
+import TitleComponent from "./ShopNow";
 import "./home.css"
-import bannerHome from '../assets/bannerHome.png'
 
-const Home = () => {
+const  ItemListContainer = () => {
     return (
-    <section>
-        <div><img src={bannerHome} alt="" /></div>
+    <section className="banner-section">
+        <div className="banner-text">
+            <h1>Elevate your performance</h1>
+            <h3>Real ballers club</h3>
+            <TitleComponent texto={"Shop Now"}/>
+        </div>
     </section>
       );
 };
 
-export default Home;
+export default ItemListContainer;

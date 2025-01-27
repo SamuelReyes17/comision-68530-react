@@ -59,7 +59,7 @@
   
   .subscription-form button {
     padding: 10px;
-    background-color: #d41818;
+    background-color: #d80808;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -67,7 +67,7 @@
   }
   
   .subscription-form button:hover {
-    background-color: #e64a19;
+    background-color: #c62424;
   }
   
   .social-icons {
