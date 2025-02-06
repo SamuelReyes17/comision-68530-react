@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { products } from "../../../products"
+import ProductCard from "../../common/productCard/ProductCard"
 
 const Productos = () => {
 const [items, setItems] = useState([])
@@ -31,12 +32,9 @@ useEffect(() =>{
             {
                 items.map((item) => {
                     return (
-                        <div style={{ border: "2px solid black"}}>
-                            <h4>{item.title}</h4>
-                            <h4>{item.description}</h4>
-                            <h4>{item.imageUrl}</h4>
-                            <h4>{item.price}</h4>
-                        </div>  
+                      <ProductCard key={item.id} price={item.price} 
+                      title={item.title} description={item.description} 
+                      stock={item.stock} imageUrl={item.imageUrl}/>
                     )
                 })
             }
