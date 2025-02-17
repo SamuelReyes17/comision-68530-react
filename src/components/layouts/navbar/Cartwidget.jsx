@@ -1,11 +1,16 @@
-import './cartwidget.css'
-const Cartwidget = ()=> {
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Badge } from "@mui/material"
+import PersonIcon from '@mui/icons-material/Person';
+
+const CartWidget = () =>{
     return (
-        <div className="cart-container">
-        <img width="25" height="25"  alt="user" src="https://img.icons8.com/ios/50/shopping-bag--v1.png"/>
-        <span className='cart-count'>2</span>
+        <div className='icons-container'>
+            <Badge badgeContent={2} color="secondary" showZero={true}>
+                <ShoppingCartIcon/>
+            </Badge>
+            <PersonIcon/>
         </div>
     )
 }
 
-export default Cartwidget
+export default CartWidget

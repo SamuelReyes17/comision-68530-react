@@ -1,7 +1,10 @@
 import "./home.css";
+import { Link } from "react-router";
 
 export default function TitleComponent({texto}) {
     return (
-        <button className="shop-button">{texto}</button>
+        <Link to={'/shop'}>
+            <button className="shop-button">{texto}</button>
+        </Link>
     )
 }
