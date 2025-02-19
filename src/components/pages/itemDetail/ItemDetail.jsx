@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { products } from '../../../products'
 import { useParams } from 'react-router'
 import './itemDetail.css'
+import Counter from '../../common/counter/Counter'
 
 export const ItemDetail = () => {
     const { id } = useParams()
@@ -12,9 +13,9 @@ export const ItemDetail = () => {
         console.log(products)
         let producto = products.find((product) => product.id === (id))
         setItem(producto)
-
         console.log(producto)
     },[id])
+
   return (
     <div className='product-container'>
       <div className='product-image'>
@@ -24,7 +25,7 @@ export const ItemDetail = () => {
         <h1 className='product-title'>{item.title}</h1>
         <p className='product-description'>{item.description}</p>
         <span className='price'>{item.price}</span>
-        <button className='buy-button'>Add to cart</button>  
+        <Counter item={item}/> 
       </div>
     </div>
   )

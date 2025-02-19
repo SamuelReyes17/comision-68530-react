@@ -11,7 +11,7 @@ const ProductCard = ({price, title, description, stock, imageUrl, id}) => {
             <h4>{price}</h4>
             <h4 style={{fontSize: "0.9rem", margin: "20px 0"}}>{stock}</h4>
             <Link to={`/itemDetail/${id}`}>
-                <Button variant="outlined" disabled={stock < 1}>Details</Button>
+                <Button variant="outlined" color="error" disabled={stock < 1}>Details</Button>
             </Link>
         </div>  
     )

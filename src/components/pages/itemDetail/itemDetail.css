@@ -36,17 +36,3 @@
   font-weight: bold;
   color: #e63946;
 }
-.buy-button {
-  margin-top: 2rem;
-  background-color: #e63946;
-  color: white;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.buy-button:hover {
-  background-color: #d62828;
-}
