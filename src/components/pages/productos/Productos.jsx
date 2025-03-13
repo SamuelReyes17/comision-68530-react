@@ -8,7 +8,6 @@ import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 const Productos = () => {
   let { name } = useParams();
   const [items, setItems] = useState([]);
-  console.log(useParams());
   useEffect(() => {
     const coleccionDeProductos = collection(db, "products");
     let consulta = coleccionDeProductos;
