@@ -49,6 +49,7 @@ const Productos = () => {
             justifyContent: "center",
             flexWrap: "wrap",
             gap: "5rem",
+            height: "100%",
           }}
         >
           {items.map((item) => {
